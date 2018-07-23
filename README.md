@@ -3,17 +3,13 @@
 
 # pheno-odk-test
 
-This ontology... YOUR DESCRIPTION HERE
+**The ontologies on this reposotory are for testing and teaching purposes only**
 
 ## Versions
 
 ### Stable release versions
 
-The latest version of the ontology can always be found at:
-
-http://purl.obolibrary.org/obo/mp.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
+The ontologies hosted here are not released to any PURLs.
 
 ### Editors' version
 
