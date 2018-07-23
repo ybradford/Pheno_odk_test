@@ -1,0 +1,17 @@
+format-version: 1.2
+ontology: mp/imports/po_import
+
+[Typedef]
+id: has_part
+name: has_part
+namespace: plant_ontology
+xref: BFO:0000051
+is_transitive: true
+
+[Typedef]
+id: part_of
+name: part_of
+namespace: plant_ontology
+xref: BFO:0000050
+is_transitive: true
+

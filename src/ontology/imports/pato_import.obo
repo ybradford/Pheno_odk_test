@@ -1,0 +1,107 @@
+format-version: 1.2
+ontology: mp/imports/pato_import
+
+[Term]
+id: PATO:0000001
+name: quality
+namespace: quality
+alt_id: PATO:0000072
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
+synonym: "trait" EXACT []
+
+[Term]
+id: PATO:0000068
+name: qualitative
+namespace: quality
+comment: TODO: define this or obsolete it and move children somewhere else.
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0000069
+name: deviation(from_normal)
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the whether the bearer differs from normal or average." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0000068 ! qualitative
+
+[Term]
+id: PATO:0000276
+name: brood size
+namespace: quality
+def: "A reproductive quality inhering in the young of an animal by virtue of their number." [PATOC:GVG]
+subset: attribute_slim
+subset: scalar_slim
+synonym: "litter size" RELATED []
+is_a: PATO:0001496 ! brood quality
+
+[Term]
+id: PATO:0000460
+name: abnormal
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's deviation from normal or average." [PATOC:GVG]
+subset: abnormal_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "aberrant" RELATED []
+synonym: "atypia" RELATED []
+synonym: "atypical" RELATED []
+synonym: "defective" RELATED []
+is_a: PATO:0000069 ! deviation(from_normal)
+property_value: RO:0002604 PATO:0000461
+
+[Term]
+id: PATO:0001241
+name: physical object quality
+namespace: quality
+alt_id: PATO:0001237
+alt_id: PATO:0001238
+def: "A quality which inheres in a continuant." [PATOC:GVG]
+comment: Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.
+synonym: "monadic quality of a continuant" EXACT []
+synonym: "monadic quality of an object" NARROW []
+synonym: "monadic quality of continuant" NARROW []
+synonym: "multiply inhering quality of a physical entity" EXACT []
+synonym: "quality of a continuant" EXACT []
+synonym: "quality of a single physical entity" EXACT []
+synonym: "quality of an object" EXACT []
+synonym: "quality of continuant" EXACT []
+xref: snap:Quality
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0001434
+name: reproductive quality
+namespace: quality
+def: "An organismal quality inhering in a bearer by virtue of the bearer's ability to produce new life or offspring." [WordNet:WordNet]
+is_a: PATO:0001995 ! organismal quality
+
+[Term]
+id: PATO:0001496
+name: brood quality
+namespace: quality
+def: "A reproductive quality inhering in the young of an animal by virtue of the bearer's being cared for at one time." [WordNet:WordNet]
+subset: attribute_slim
+is_a: PATO:0001434 ! reproductive quality
+
+[Term]
+id: PATO:0001995
+name: organismal quality
+namespace: quality
+def: "A quality that inheres in an entire organism or part of an organism." [PATOC:CJM]
+is_a: PATO:0001241 ! physical object quality
+
+[Typedef]
+id: has_part
+name: has_part
+namespace: quality
+def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
+comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
+xref: BFO:0000051
+
+[Typedef]
+id: part_of
+name: part_of
+namespace: quality
+xref: BFO:0000050
+is_transitive: true
+
