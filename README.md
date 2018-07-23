@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/obophenotype/pheno-odk-test.svg?branch=master)](https://travis-ci.org/obophenotype/pheno-odk-test)
+[![Build Status](https://travis-ci.org/obophenotype/pheno_odk_test.svg?branch=master)](https://travis-ci.org/obophenotype/pheno_odk_test)
 [![DOI](https://zenodo.org/badge/13996/obophenotype/pheno-odk-test.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/pheno-odk-test)
 
 # pheno-odk-test
