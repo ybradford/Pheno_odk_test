@@ -1,0 +1,8 @@
+defined_class	defined_class_label	entity	entity_label
+MP:0008971	"abnormal ethmoturbinate morphology"	UBERON:0003973	"nasal concha of ethmoid bone"
+MP:0005149	"abnormal gubernaculum morphology"	UBERON:0004346	"gubernaculum (male or female)"
+MP:0008818	"abnormal interfrontal bone morphology"	UBERON:0003971	"interfrontal bone"
+MP:0006322	"abnormal perichondrium morphology"	UBERON:0002222	"perichondrium"
+MP:0008957	"abnormal placenta junctional zone morphology"	UBERON:0003972	"placenta junctional zone"
+MP:0008803	"abnormal placental labyrinth vasculature morphology"	UBERON:0003970	"placental labyrinth vasculature"
+MP:0001168	"abnormal prostate gland epithelium morphology"	UBERON:0000428	"prostate epithelium"

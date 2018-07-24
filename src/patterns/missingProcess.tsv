@@ -1,0 +1,4 @@
+defined_class	defined_class_label	entity	entity_label
+MP:0004512	"anosmia"	GO:0007608	"sensory perception of smell"
+MP:0004513	"avnosmia"	GO:0043695	"detection of pheromone"
+MP:0000299	"failure of atrioventricular cushion closure"	GO:0003274	"endocardial cushion fusion"

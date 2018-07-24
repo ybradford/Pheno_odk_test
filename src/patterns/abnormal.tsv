@@ -92,9 +92,6 @@ MP:0008272	"abnormal endochondral bone ossification"	GO:0001958	"endochondral os
 MP:0013400	"abnormal endometrial gland development"	GO:1903709	"uterine gland development"
 MP:0005448	"abnormal energy homeostasis"	GO:0097009	"energy homeostasis"
 MP:0006319	"abnormal epididymal fat pad morphology"	UBERON:0010412	"epididymal fat pad"
-MP:0012385	"abnormal erythrocyte potassium:chloride symporter activity"	_:Bgenid75242	
-MP:0012388	"abnormal erythrocyte sodium:hydrogen antiporter activity"	_:Bgenid75278	
-MP:0012391	"abnormal erythrocyte sodium:potassium-exchanging ATPase activity"	_:Bgenid75314	
 MP:0009016	"abnormal estrus"	GO:0060209	"estrus"
 MP:0006033	"abnormal external auditory canal morphology"	UBERON:0001352	"external acoustic meatus"
 MP:0002807	"abnormal eye blink conditioning behavior"	NBO:0000227	"eye blink conditioning behavior"
@@ -140,7 +137,6 @@ MP:0000436	"abnormal head movements"	NBO:0000020	"head movement"
 MP:0001963	"abnormal hearing physiology"	GO:0007605	"sensory perception of sound"
 MP:0002396	"abnormal hematopoietic system morphology/development"	UBERON:0002390	"hematopoietic system"
 MP:0009676	"abnormal hemostasis"	GO:0007599	"hemostasis"
-MP:0003943	"abnormal hepatobiliary system development"	_:Bgenid30385	
 MP:0003005	"abnormal hippocampal fimbria morphology"	UBERON:0002310	"hippocampus fimbria"
 MP:0008285	"abnormal hippocampus granule cell layer"	UBERON:0005367	"hippocampus granule cell layer"
 MP:0011589	"abnormal hormone-sensitive lipase activity"	GO:0033878	"hormone-sensitive lipase activity"
@@ -213,7 +209,6 @@ MP:0012024	"abnormal nephron morphogenesis"	GO:0072028	"nephron morphogenesis"
 MP:0001447	"abnormal nest building behavior"	NBO:0000157	"nest building behavior"
 MP:0004838	"abnormal neural fold elevation formation"	GO:0021502	"neural fold elevation formation"
 MP:0004837	"abnormal neural fold formation"	GO:0001842	"neural fold formation"
-MP:0009967	"abnormal neuron proliferation"	_:Bgenid60170	
 MP:0002948	"abnormal neuron specification"	GO:0048665	"neuron fate specification"
 MP:0012597	"abnormal nicotinamide N-methyltransferase activity"	GO:0008112	"nicotinamide N-methyltransferase activity"
 MP:0013728	"abnormal nipple sheath formation"	GO:0060659	"nipple sheath formation"
@@ -263,7 +258,6 @@ MP:0002211	"abnormal primary sex determination"	GO:0007538	"primary sex determin
 MP:0020051	"abnormal procollagen-proline 4-dioxygenase activity"	GO:0004656	"procollagen-proline 4-dioxygenase activity"
 MP:0009013	"abnormal proestrus"	GO:0060208	"proestrus"
 MP:0020227	"abnormal proline oxidase activity"	GO:0051699	"proline oxidase activity"
-MP:0002295	"abnormal pulmonary circulation"	_:Bgenid19375	
 MP:0002336	"abnormal pulmonary gas exchange"	GO:0007585	"respiratory gaseous exchange"
 MP:0002638	"abnormal pupillary reflex"	NBO:0000412	"pupillary light reflex"
 MP:0011595	"abnormal purine-nucleoside phosphorylase activity"	GO:0004731	"purine-nucleoside phosphorylase activity"
@@ -290,7 +284,6 @@ MP:0003228	"abnormal sinus venosus morphology"	UBERON:0006615	"venous sinus"
 MP:0002113	"abnormal skeleton development"	GO:0001501	"skeletal system development"
 MP:0003941	"abnormal skin development"	GO:0043588	"skin development"
 MP:0011396	"abnormal sleep behavior"	NBO:0000024	"sleeping behavior"
-MP:0010157	"abnormal small intestinal crypt cell proliferation"	_:Bgenid61590	
 MP:0001360	"abnormal social investigation"	NBO:0000148	"social investigation"
 MP:0020437	"abnormal social play behavior"	NBO:0000049	
 MP:0002557	"abnormal social/conspecific interaction"	NBO:0000011	"social behavior"
@@ -342,7 +335,6 @@ MP:0010983	"abnormal ureteric bud invasion"	GO:0072092	"ureteric bud invasion"
 MP:0003942	"abnormal urinary system development"	GO:0072001	"renal system development"
 MP:0001756	"abnormal urination"	GO:0060073	"micturition"
 MP:0003630	"abnormal urothelium morphology"	UBERON:0000365	"urothelium"
-MP:0003542	"abnormal vascular endothelial cell development"	_:Bgenid27470	
 MP:0004883	"abnormal vascular wound healing"	GO:0060055	"angiogenesis involved in wound healing"
 MP:0001622	"abnormal vasculogenesis"	GO:0001570	"vasculogenesis"
 MP:0001613	"abnormal vasodilation"	GO:0042311	"vasodilation"
@@ -367,12 +359,10 @@ MP:0005023	"abnormal wound healing"	GO:0042060	"wound healing"
 MP:0000402	"abnormal zigzag hair morphology"	UBERON:0010513	"strand of zigzag hair"
 MP:0003696	"abnormal zona pellucida morphology"	UBERON:0000086	"zona pellucida"
 MP:0002862	"altered righting response"	NBO:0000578	"righting reflex"
-MP:0005546	"choroidal neovascularization"	_:Bgenid41935	
 MP:0004028	"chromosome breakage"	GO:0031052	"chromosome breakage"
 MP:0001410	"head bobbing"	NBO:0000570	"head bobbing"
 MP:0002730	"head shaking"	NBO:0000023	"head shaking"
 MP:0005307	"head tossing"	NBO:0000571	"mutlidirectional head movement"
 MP:0009597	"impaired stratum corneum desquamation"	GO:0003336	"corneocyte desquamation"
 MP:0001513	"limb grasping"	NBO:0000584	"clutching reflex"
-MP:0008852	"retinal neovascularization"	_:Bgenid52389	
 MP:0001355	"submission towards male mice"	NBO:0000125	"submissive behavior towards male mice"
