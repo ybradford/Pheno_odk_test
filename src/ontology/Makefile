@@ -26,11 +26,11 @@ DOSDPT=dosdp-tools
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl $(ONT).obo ../patterns/pattern.owl 
+all: pattern definitions.owl sparql_test $(ONT).owl $(ONT).obo  
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
-	mkdir -p $(RELEASEDIR)/imports &&\
+	mkdir -p all_imports $(RELEASEDIR)/imports &&\
 	cp imports/*.owl $(RELEASEDIR)/imports &&\
 	cp imports/*.obo $(RELEASEDIR)/imports &&\
 	git add $(RELEASEDIR)/imports/*.obo &&\
@@ -56,7 +56,8 @@ $(ONT).obo: $(ONT).owl
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
-IMPORTS = ro pato uberon go cl po chebi mpath
+IMPORTS = ro pato uberon go cl po chebi mpath bfo # Leaving out NBO as currently inconsistent
+
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS)) $(patsubst %, imports/%_terms.txt,$(IMPORTS))
 
 # generate seed with all referenced entities
@@ -133,16 +134,12 @@ build-docker:
 # Test patterns for schema compliance:
 
 
-PATTERN_IMPORT_ONTOLOGIES = po ro pato 
-
-PATTERN_IMPORTS = pattern.owl seed.txt $(patsubst %, imports/%_terms.txt,$(IMPORTS)) $(patsubst %, imports/%_import.owl,$(PATTERN_IMPORT_ONTOLOGIES))
-
-
+PATTERN_IMPORTS = ../patterns/pattern.owl ../patterns/imports/seed_sorted.txt $(patsubst %, ../patterns/imports/%_import.owl,$(IMPORTS))
 
 # Better to make this an intermediate & merge with pattern.owl file having correct iri and import statements - configured by make
 
 ../patterns/pattern.owl: pattern_schema_checks
-	$(DOSDPT) prototype --prefixes=../prefixes.yaml --template=. --outfile=$@
+	$(DOSDPT) prototype --obo-prefixes --template=../patterns --outfile=$@
 
 pattern_schema_checks:
 	simple_pattern_tester.py ../patterns # 2>&1 | tee $@
@@ -150,13 +147,13 @@ pattern_schema_checks:
 ../patterns/imports/seed.txt: ../patterns/pattern.owl
 	$(ROBOT) query -f csv -i $< --query ../sparql/terms.sparql $@
 
-../patterns/imports/%_terms.txt: ../patterns/imports/seed.txt
-	grep -i $(OBO)/$*_ $< > $@
+../patterns/imports/seed_sorted.txt: ../patterns/imports/seed.txt
+	cat ../patterns/imports/seed.txt | sort | uniq > $@
 
-../patterns/imports/%_import.owl: mirror/%.owl ../patterns/imports/%_terms.txt
-	$(ROBOT) extract -i $< -T imports/$*_terms.txt --method BOT -O $(BASE)/$@ -o $@
+../patterns/imports/%_import.owl: mirror/%.owl ../patterns/imports/seed_sorted.txt
+	$(ROBOT) extract -i $< -T ../patterns/imports/seed_sorted.txt --method BOT -O mirror/$*.owl -o $@
 
-pattern_imports: $(PATTERN_IMPORTS)
+pattern: $(PATTERN_IMPORTS)
 
 pattern_files := $(wildcard ../patterns/*.yaml)
 pattern_tsv_files := $(wildcard ../patterns/*.tsv)
@@ -168,11 +165,10 @@ $(IMS)/patterns/%.ofn: ../patterns/%.yaml ../patterns/%.tsv $(ONT)-edit.owl
 	mkdir -p $(IMS)/patterns &&\
 	dosdp-tools generate --catalog=catalog-v001.xml --infile=$(word 2, $^) --template=$< --ontology=$(word 3, $^) --obo-prefixes=true --outfile=$@
 
-
 pattern_modules := $(patsubst %.yaml, $(IMS)/patterns/%.ofn, $(notdir $(wildcard ../patterns/*.yaml)))
 
 ../patterns/definitions.owl: $(pattern_modules)
-	$(ROBOT) merge $(addprefix -i , $(pattern_modules)) annotate --ontology-iri $(PREFIX)/$(ONT)-patterns.ofn -o $@
+	$(ROBOT) merge $(addprefix -i , $(pattern_modules)) annotate --ontology-iri $(OBO)/$(ONT)/$@ -o $@
 
 
 

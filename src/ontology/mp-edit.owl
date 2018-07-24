@@ -13,21 +13,8 @@ Import(<http://purl.obolibrary.org/obo/mp/imports/cl_import.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/pato_import.owl>)
-Import(<urn:absolute:/mp-patterns.ofn>)
+Import(<http://purl.obolibrary.org/obo/mp/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/mpath_import.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/po_import.owl>)
 Annotation(rdfs:comment "Pheno_odk_test")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/MP_00000000>))
-
-
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/MP_00000000> (mp)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MP_00000000> "mp"@en)
-
-
-)
