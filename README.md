@@ -1,19 +1,15 @@
-[![Build Status](https://travis-ci.org/obophenotype/pheno-odk-test.svg?branch=master)](https://travis-ci.org/obophenotype/pheno-odk-test)
+[![Build Status](https://travis-ci.org/obophenotype/pheno_odk_test.svg?branch=master)](https://travis-ci.org/obophenotype/pheno_odk_test)
 [![DOI](https://zenodo.org/badge/13996/obophenotype/pheno-odk-test.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/pheno-odk-test)
 
 # pheno-odk-test
 
-This ontology... YOUR DESCRIPTION HERE
+**The ontologies on this reposotory are for testing and teaching purposes only**
 
 ## Versions
 
 ### Stable release versions
 
-The latest version of the ontology can always be found at:
-
-http://purl.obolibrary.org/obo/mp.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
+The ontologies hosted here are not released to any PURLs.
 
 ### Editors' version
 
