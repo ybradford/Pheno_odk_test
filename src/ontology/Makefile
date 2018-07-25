@@ -26,7 +26,7 @@ DOSDPT=dosdp-tools
 # Top-level targets
 # ----------------------------------------
 
-all: pattern definitions.owl sparql_test $(ONT).owl $(ONT).obo  
+all: pattern all_imports sparql_test $(ONT).owl $(ONT).obo  
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -109,7 +109,7 @@ VCHECKS = equivalent-classes trailing-whitespace owldef-self-reference xref-synt
 #  run all violation checks
 VQUERIES = $(foreach V,$(VCHECKS),$(SPARQLDIR)/$V-violation.sparql)
 sparql_test: $(SRC)
-	robot verify -i $< --queries $(VQUERIES) -O reports/
+	robot verify --catalog catalog-v001.xml -i $< --queries $(VQUERIES) -O reports/
 
 # ----------------------------------------
 # Sparql queries: Reports

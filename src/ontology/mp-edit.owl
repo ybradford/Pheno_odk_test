@@ -13,8 +13,9 @@ Import(<http://purl.obolibrary.org/obo/mp/imports/cl_import.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/pato_import.owl>)
-Import(<http://purl.obolibrary.org/obo/mp/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/mpath_import.owl>)
 Import(<http://purl.obolibrary.org/obo/mp/imports/po_import.owl>)
-Annotation(rdfs:comment "Pheno_odk_test")
+Import(<http://purl.obolibrary.org/obo/mp/patterns/definitions.owl>)
+Annotation(rdfs:comment "Pheno_odk_test"))
+
 
