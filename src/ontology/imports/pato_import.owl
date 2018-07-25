@@ -92,6 +92,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/pato#disposition_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#disposition_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disposition slim</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/pato#mpath_slim -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#mpath_slim">
@@ -760,6 +768,30 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reproductive quality inhering in the young of an animal by virtue of their number.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000402">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A branchiness quality inhering in a bearer by virtue of the bearer&apos;s having branches.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000414"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ramified</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ramiform</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000402</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">branched</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000402"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A branchiness quality inhering in a bearer by virtue of the bearer&apos;s having branches.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1598,6 +1630,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0001355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001355">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shape quality that obtains by virtue of the bearer having inward facing edges; having a surface or boundary that curves or bulges outward, as the exterior of a sphere.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001857"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001355</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">convex</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001355"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shape quality that obtains by virtue of the bearer having inward facing edges; having a surface or boundary that curves or bulges outward, as the exterior of a sphere.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001374 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001374">
@@ -2281,6 +2334,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0001701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000261"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality inhering in a bearer by virtue of the bearer&apos;s exhibiting complete growth, differentiation, or development.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001501"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001701</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001701"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality inhering in a bearer by virtue of the bearer&apos;s exhibiting complete growth, differentiation, or development.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merriam-Webster:Merriam-Webster</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001710 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001710">
@@ -2698,6 +2771,53 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0002008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002266"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001857"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A complete three dimensional shape in which there is a line connecting pair of points on the object that lies outside the object. Or: a shape with cavities. Contrast: concave.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002007"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image:http://en.wikipedia.org/wiki/Image:Convex_polygon_illustration2.png</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0002008</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concave 3-D shape</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A complete three dimensional shape in which there is a line connecting pair of points on the object that lies outside the object. Or: a shape with cavities. Contrast: concave.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shape quality inhering in a bearer by virtue of the degree to which there are subdivisions or offshoots in a bearer entity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0002009</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">branchiness</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002009"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shape quality inhering in a bearer by virtue of the degree to which there are subdivisions or offshoots in a bearer entity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:MAH</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0002037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002037">
@@ -2759,6 +2879,27 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A concave quality inhering in a bearer by virtue of the bearer&apos;s curving inward on both sides or surfaces.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001355"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shape quality inhering in a bearer by virtue of the bearer&apos;s being convex on both sides or surface.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002039"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image:http://www.thefreedictionary.com/_/viewer.aspx?path=hm&amp;name=A4bicovx</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0002040</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biconvex</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shape quality inhering in a bearer by virtue of the bearer&apos;s being convex on both sides or surface.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thefreedictionary:http://www.thefreedictionary.com/biconvexity</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2925,6 +3066,28 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002094"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An affinity inhering in a tissue constituent by virtue of the bearer exhibiting a molecular interaction for basic dyes under specific ph conditions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000141"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality inhering in a bearer by virtue of the bearer&apos;s processing the form of a thin plate sheet or layer.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-10-06T04:37:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0002124</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laminar</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002124"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality inhering in a bearer by virtue of the bearer&apos;s processing the form of a thin plate sheet or layer.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
