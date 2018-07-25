@@ -1,11 +1,12 @@
 pattern_name: abnormalLevelOfChemicalInEntity
+pattern_iri: http://purl.obolibrary.org/obo/upheno/patterns/abnormalLevelOfChemicalInEntity
 
 classes:
   amount: PATO:0000070
   abnormal: PATO:0000460
   chemical entity: CHEBI:24431
-  Thing: owl:Thing
-
+  entity: BFO:0000001
+   
 relations: 
   inheres_in: RO:0000052
   qualifier: RO:0002573
@@ -13,24 +14,24 @@ relations:
   part_of: BFO:0000050
 
 vars:
-  chemical_entity: "'chemical entity'"
-  entity: Thing
+  chemical entity: "'chemical entity'"
+  entity: "'entity'"
 
 name:
   text: "abnormal %s %s level"
   vars:
    - entity
-   - chemical_entity
+   - 'chemical entity'
 
 
 def:
   text: "An abnormal level of %s in the %s."
   vars:
-    - chemical_entity
+    - 'chemical entity'
     - entity
 
 equivalentTo:
   text: "'has_part' some (amount and ('inheres_in' some (%s and ('part_of' some %s))) and ('qualifier' some abnormal))"
   vars:
-    - chemical_entity
+    - 'chemical entity'
     - entity
