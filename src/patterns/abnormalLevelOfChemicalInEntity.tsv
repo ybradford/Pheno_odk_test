@@ -1,4 +1,4 @@
-defined_class	defined_class_label	chemical_entity	chemical_entity_label	entity	entity_label
+defined_class	defined_class_label	chemical	chemical_label	entity	entity_label
 MP:0003905	"abnormal aorta elastin content"	PR:000007034	"elastin"	UBERON:0000947	"aorta"
 MP:0002329	"abnormal blood gas level"	CHEBI:25805	"oxygen atom"	UBERON:0001969	"blood plasma"
 MP:0005265	"abnormal blood urea nitrogen level"	CHEBI:16199	"urea"	UBERON:0000178	"blood"

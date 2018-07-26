@@ -13,6 +13,9 @@ relations:
   has_part: BFO:0000051
   part_of: BFO:0000050
 
+annotationProperties:
+  exact_synonym: oio:hasExactSynonym
+
 vars:
   entity: "'entity'"
   location: "'entity'"
@@ -24,7 +27,7 @@ name:
    - location
 
 annotations:
-  - annotationProperty: oio:hasExactSynonym
+  - annotationProperty: exact_synonym
     text: "Abnormal %s in the %s"
     vars:
      - entity
