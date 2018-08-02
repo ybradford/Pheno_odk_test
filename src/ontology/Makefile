@@ -142,7 +142,7 @@ PATTERN_IMPORTS = ../patterns/pattern.owl ../patterns/imports/seed_sorted.txt $(
 	$(DOSDPT) prototype --obo-prefixes --template=../patterns --outfile=$@
 
 pattern_schema_checks:
-	simple_pattern_tester.py ../patterns # 2>&1 | tee $@
+	simple_pattern_tester.py ../patterns/ # 2>&1 | tee $@
 
 ../patterns/imports/seed.txt: ../patterns/pattern.owl
 	$(ROBOT) query -f csv -i $< --query ../sparql/terms.sparql $@
@@ -168,7 +168,7 @@ $(IMS)/patterns/%.ofn: ../patterns/%.yaml ../patterns/%.tsv $(ONT)-edit.owl
 pattern_modules := $(patsubst %.yaml, $(IMS)/patterns/%.ofn, $(notdir $(wildcard ../patterns/*.yaml)))
 
 ../patterns/definitions.owl: $(pattern_modules)
-	$(ROBOT) merge $(addprefix -i , $(pattern_modules)) annotate --ontology-iri $(OBO)/$(ONT)/$@ -o $@
+	$(ROBOT) merge $(addprefix -i , $(pattern_modules)) annotate --ontology-iri $(OBO)/$(ONT)/patterns/definitions.owl -o $@
 
 
 
