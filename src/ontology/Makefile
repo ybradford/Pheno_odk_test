@@ -26,7 +26,7 @@ DOSDPT=dosdp-tools
 # Top-level targets
 # ----------------------------------------
 
-all: pattern all_imports sparql_test $(ONT).owl $(ONT).obo  
+all: pattern all_imports sparql_test $(ONT).owl $(ONT).obo
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -37,7 +37,7 @@ prepare_release: all
 	git add $(RELEASEDIR)/imports/*.owl &&\
 	(test -f subsets/*owl && cp subsets/* $(RELEASEDIR)/subsets && git add $(RELEASEDIR)/subsets/* || echo "no subsets") &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
- 
+
 # ----------------------------------------
 # Main release targets
 # ----------------------------------------
@@ -56,7 +56,7 @@ $(ONT).obo: $(ONT).owl
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
-IMPORTS = ro pato uberon go cl po chebi mpath bfo # Leaving out NBO as currently inconsistent
+IMPORTS = ro pato uberon go po chebi mpath bfo # Leaving out NBO as currently inconsistent, cl because it does not work
 
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS)) $(patsubst %, imports/%_terms.txt,$(IMPORTS))
 
@@ -169,11 +169,3 @@ pattern_modules := $(patsubst %.yaml, $(IMS)/patterns/%.ofn, $(notdir $(wildcard
 
 ../patterns/definitions.owl: $(pattern_modules)
 	$(ROBOT) merge $(addprefix -i , $(pattern_modules)) annotate --ontology-iri $(OBO)/$(ONT)/patterns/definitions.owl -o $@
-
-
-
-
-
-
-
-
