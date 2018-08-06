@@ -56,7 +56,7 @@ $(ONT).obo: $(ONT).owl
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
-IMPORTS = ro pato uberon go po mpath bfo # Leaving out NBO as currently inconsistent, chebi and cl because it does not work
+IMPORTS = ro pato uberon go po mpath bfo cl # Leaving out NBO as currently inconsistent, chebi and cl because it does not work
 
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS)) $(patsubst %, imports/%_terms.txt,$(IMPORTS))
 
