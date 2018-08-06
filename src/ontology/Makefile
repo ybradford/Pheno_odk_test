@@ -91,7 +91,7 @@ mirror/%.owl:
 	$(ROBOT) convert -I $(OBO)/$*.owl -o $@
 .PRECIOUS: mirror/%.owl
 
-# TODO: figure out a more generic way of doing this
+# TODO: figure out a more generic way of doing this; also do this for Uberon, GO, ...
 # See: https://github.com/INCATools/ontology-development-kit/issues/50
 mirror/cl.owl: 
 	$(ROBOT) convert -I $(OBO)/cl/cl-base.owl -o $@
