@@ -87,13 +87,13 @@ imports/%_import.obo: imports/%_import.owl
 	$(ROBOT) convert -i $< -o $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
-mirror/%.owl: 
+mirror/%.owl:
 	$(ROBOT) convert -I $(OBO)/$*.owl -o $@
 .PRECIOUS: mirror/%.owl
 
 # TODO: figure out a more generic way of doing this; also do this for Uberon, GO, ...
 # See: https://github.com/INCATools/ontology-development-kit/issues/50
-mirror/cl.owl: 
+mirror/cl.owl:
 	$(ROBOT) convert -I $(OBO)/cl/cl-base.owl -o $@
 
 
@@ -157,7 +157,7 @@ pattern_schema_checks:
 	cat ../patterns/imports/seed.txt | sort | uniq > $@
 
 ../patterns/imports/%_import.owl: mirror/%.owl ../patterns/imports/seed_sorted.txt
-	$(ROBOT) extract -i $< -T ../patterns/imports/seed_sorted.txt --method BOT -O mirror/$*.owl -o $@
+	$(ROBOT) extract -i $< -T ../patterns/imports/seed_sorted.txt --method BOT -O $(OBO)/patterns/imports/$*_import.owl -o $@
 
 pattern: $(PATTERN_IMPORTS)
 
