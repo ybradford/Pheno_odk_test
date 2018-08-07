@@ -5,3 +5,12 @@ src/ontology/mp.obo
 src/ontology/mp.owl
 semantic.cache
 bin/
+.DS_Store
+*.ofn
+src/ontology/imports/bfo_import.obo
+src/ontology/imports/mpath_import.obo
+src/ontology/ed_definitions_merged.owl
+src/ontology/seed.txt
+src/patterns/imports/seed.txt
+src/patterns/imports/seed.txt
+src/patterns/imports/seed_sorted.txt
